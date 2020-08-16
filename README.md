@@ -1,4 +1,4 @@
-## Sample test 
+## Sample test end-to-end | REACT (JEST)
 
 ## Available Scripts
 
