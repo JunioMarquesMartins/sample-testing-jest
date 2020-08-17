@@ -3,7 +3,8 @@ import { useSelector, useDispatch } from 'react-redux';
 import { render, fireEvent } from '@testing-library/react';
 import TechList from '../../components/TechList';
 
-import { addTech} from '../../store/modules/techs/actions';
+import { addTech } from '../../store/modules/techs/actions';
+
 
 jest.mock('react-redux');
 
@@ -14,9 +15,7 @@ describe('TechList component', () => {
             techs: ['Node.js', 'ReactJS']
         }));
 
-        const { getByTestId, getByText, debug } = render(<TechList />);
-        
-        debug()
+        const { getByTestId, getByText } = render(<TechList />);
         
         expect(getByTestId('tech-list')).toContainElement(getByText('Node.js'));
         expect(getByTestId('tech-list')).toContainElement(getByText('ReactJS'));
