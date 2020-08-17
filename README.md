@@ -8,11 +8,15 @@ In the project directory, you can run:
 
 
 ## Command for running test
+
 ### `yarn test`
 
 Launches the test runner in the interactive watch mode.<br />
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
+## Command to generate coverage
+Roll this command to generate the "coverage" folder with the details of the tests:<br />
+### `yarn test --coverage`
 
 ### `yarn start`
 
